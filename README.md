@@ -25,3 +25,9 @@ git clone https://github.com/koreyboone/react-testing-library-course.git
 cd react-testing-library-course/
 npm run setup
 ```
+
+If you receive an error during installation, try running:
+
+```
+npm config set strict-ssl false
+```
