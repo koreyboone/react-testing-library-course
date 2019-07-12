@@ -5,14 +5,8 @@ react-testing-library.js
 state.js
 prop-updates.js
 
-unmounting.js
-
 mock-component.js
-portals.js
 http-jest-mock.js
-dependency-injection.js
-a11y.js
-error-boundary.js
 
 react-router-01.js
 react-router-02.js
@@ -32,3 +26,8 @@ tdd-07-error-state.js
 tdd-08-custom-render.js
 
 render-props.js
+
+custom-hook-01.js
+custom-hook-02.js
+custom-hook-03.js
+custom-hook-04.js

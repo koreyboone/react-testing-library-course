@@ -1,7 +1,7 @@
-import 'jest-dom/extend-expect'
-import 'react-testing-library/cleanup-after-each'
+import '@testing-library/jest-dom/extend-expect'
+import '@testing-library/react/cleanup-after-each'
 import React from 'react'
-import {render, fireEvent} from 'react-testing-library'
+import {render, fireEvent} from '@testing-library/react'
 import {FavoriteNumber} from '../favorite-number'
 
 test('entering an invalid value shows an error message', () => {
@@ -16,18 +16,3 @@ test('entering an invalid value shows an error message', () => {
   // 🐨 call rerender with the FavoriteNumber and a max prop of 10.
   // 🐨 use the queryByTestId to verify that the 'error-message' node is not rendered.
 })
-
-//////// Elaboration & Feedback /////////
-// When you've finished with the exercises:
-// 1. Copy the URL below into your browser and fill out the form
-// 2. remove the `.skip` from the test below
-// 3. Change submitted from `false` to `true`
-// 4. And you're all done!
-/*
-http://ws.kcd.im/?ws=react-testing-library-course&e=prop-updates&em=
-*/
-test.skip('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
-  expect(submitted).toBe(true)
-})
-////////////////////////////////

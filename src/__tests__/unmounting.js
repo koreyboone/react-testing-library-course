@@ -1,10 +1,10 @@
 // these should normally be in your jest setupTestFrameworkScriptFile
-import 'jest-dom/extend-expect'
-import 'react-testing-library/cleanup-after-each'
+import '@testing-library/jest-dom/extend-expect'
+import '@testing-library/react/cleanup-after-each'
 
 // 0⃣ 🐨 you're gonna need these
 // import React from 'react'
-// import {render} from 'react-testing-library'
+// import {render} from '@testing-library/react'
 // import {Countdown} from '../countdown'
 
 // because we're doing a time-based thing in our component, we need to force
@@ -34,18 +34,3 @@ test('does not attempt to set state when unmounted (to prevent memory leaks)', (
   // (then, you can test that it worked by removing the componentWillUnMount in
   // the countdown component)
 })
-
-//////// Elaboration & Feedback /////////
-// When you've finished with the exercises:
-// 1. Copy the URL below into your browser and fill out the form
-// 2. remove the `.skip` from the test below
-// 3. Change submitted from `false` to `true`
-// 4. And you're all done!
-/*
-http://ws.kcd.im/?ws=react-testing-library-course&e=unmounting&em=
-*/
-test.skip('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
-  expect(submitted).toBe(true)
-})
-////////////////////////////////

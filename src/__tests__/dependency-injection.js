@@ -1,9 +1,9 @@
 // these should normally be in your jest setupTestFrameworkScriptFile
-import 'jest-dom/extend-expect'
-import 'react-testing-library/cleanup-after-each'
+import '@testing-library/jest-dom/extend-expect'
+import '@testing-library/react/cleanup-after-each'
 
 import React from 'react'
-import {render, fireEvent, wait} from 'react-testing-library'
+import {render, fireEvent, wait} from '@testing-library/react'
 // 3⃣ 🐨 remove this import
 import {loadGreeting as mockLoadGreeting} from '../api'
 // 5⃣ 🐨 go into greeting-loader-01-mocking and make changes there:
